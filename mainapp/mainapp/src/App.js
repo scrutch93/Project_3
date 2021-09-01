@@ -12,7 +12,7 @@ const [packageList, setTracking] = useState(data);
 
 const handleToggle = (id) => {
   let mapped = packageList.map (tracking => {
-    return tracking.id == id ? {tracking, complete: !tracking.complete} 
+    return tracking.id == id ? {tracking, complete: !tracking.complete}:  
   })
   setTracking(mapped);
 }
