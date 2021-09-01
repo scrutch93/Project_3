@@ -1,15 +1,19 @@
-import logo from './DelivRy_Logo.png';
+import React, {useState} from 'react';
+import data from "./data.json";
+//components
+import Header from "./Header";
+import PackageList from "./packageList";
+
 import './App.css';
 
+
 function App() {
+const [packageList, setTracking] = useState(data);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <button id="homeBtn">Login</button>
-        <br></br>
-        <button id="homeBtn">Create Account</button>
-      </header>   
+      <Header />
+      <PackageList packageList={packageList}/>
     </div>
   );
 }
