@@ -12,6 +12,12 @@ code {
     monospace;
 }
 
+
+
+#login {
+
+x.style.left: "-400px"
+
 .strike {
   text-decoration: line-through;
 }
