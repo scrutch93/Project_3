@@ -7,11 +7,10 @@ export default function homePage(){
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Link to='/login' >Login</Link>
-        <button id="homeBtn">Login</button>
+        <Link id="homeBtn" to='/login' >Login</Link>
         <br></br>
-        <button id="homeBtn">Create Account</button>
-      </header>   
+        <Link id="homeBtn" to='/register' >Create Account</Link>
+        </header>   
     </div>
     )
 }
