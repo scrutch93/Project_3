@@ -1,12 +1,15 @@
-const express = require 
+const express = require ("express");
+const mongoose = require ("mongoose");
+
+
 
 require('dotenv').config();
-const User = require('../model/user')
+const User = require('../models/User')
 
-mongoose.connect (process.env.MONGODB_URI, {
-    useNewUrlParser: true, 
-    useUnifiedTopology: true 
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
+  useNewUrlParser: true
 })
+
 .then(() => {
     console.log("DB Connected");
 })
