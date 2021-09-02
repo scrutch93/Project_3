@@ -6,6 +6,7 @@ import Header from "./Header";
 import PackageList from "./packageList";
 import Home from "./components/home";
 import Login from "./Pages/login";
+import Register from "./Pages/register";
 import './App.css';
 
 
@@ -25,10 +26,12 @@ const [packageList, setTracking] = useState(data);
     <BrowserRouter>
       <div className="App">
         <Header />
+        <br></br>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/inventory" component={PackageList } />
-          <Route path="/login" component={Login} />
+          <Route path="/inventory" component={PackageList} />
+          <Route path="/login" component={Login} id="login"/>
+          <Route path="/register" component={Register} />
         </Switch>
       </div>
     </BrowserRouter>

@@ -2,9 +2,9 @@ import React from 'react';
  
 const Header = () => {
    return (
-       <header>
+       <nav id='nav'>
            <h1>DelivRy Package Tracking</h1>
-       </header>
+       </nav>
    );
 };
  
