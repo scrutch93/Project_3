@@ -8,7 +8,6 @@
   pointer-events: none;
 }
 
-
 .App-header {
   background-color: white;
   min-height: 100vh;
@@ -57,6 +56,3 @@
   align-items: center;
 }
 
-#logBtn {
-  
-}
