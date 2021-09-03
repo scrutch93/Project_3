@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  padding-top: 100px;
+  
 }
 
 .App-logo {
@@ -15,7 +15,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content:flex-start;
+  justify-content:center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -30,7 +30,6 @@
   text-align:center;
   background-color: rgb(232, 129, 74);
   border-radius: 20px;
-  border-color: rgb(10, 128, 124);
   border-width: 5px;
   font-weight: bold;
   font-size: large;
@@ -38,4 +37,26 @@
 
 #homeBtn:hover {
   color: rgb(10, 128, 124);
+}
+
+#nav {
+  position: absolute;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  display: block;
+  width: 100%;
+  background-color:rgb(10, 128, 124);
+  color: white;
+  text-align: left;
+  padding-left: 3%;
+}
+
+#login {
+  padding-top: 15%;
+  flex-direction: column;
+  align-items: center;
+}
+
+#logBtn {
+  
 }
