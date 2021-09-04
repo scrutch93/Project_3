@@ -9,6 +9,19 @@ const UserSchema = new Schema({
     
 });
 
+UserSchema.pre('save', async function (next) {
+    if (this.isNew || this.isModified('password')) {
+      const saltRounds = 10;
+      this.password = await bcrypt.hash(this.password, saltRounds);
+    }
+  
+    next();
+  });
+  
+  // compare the incoming password with the hashed password
+  UserSchema.methods.isCorrectPassword = async function (password) {
+    return bcrypt.compare(password, this.password);
+  };
 
 
 
