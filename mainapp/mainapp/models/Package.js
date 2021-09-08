@@ -1,8 +1,9 @@
-const { Schema, model } = require('mongoose');
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema
 
 const PackageSchema = new Schema({
-    tracking_number: { type: Number},trim: true, required: "Please enter in a tracking number",
-    carrier_code: { type: String}, trim: true, required: "Please select a carrier/carrier code",
+    tracking_number: { type: Number,trim: true, required: "Please enter in a tracking number"},
+    carrier_code: { type: String, trim: true, required: "Please select a carrier/carrier code"},
     status_description: { type: String}, 
     ship_date: {type: String},
     estimated_delivery_date: {type: String},
@@ -10,6 +11,6 @@ const PackageSchema = new Schema({
 });
 
 
-const Package = model ('Package', PackageSchema)
+const Package = mongoose.model ('Package', PackageSchema)
 
 module.exports = Package
