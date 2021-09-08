@@ -8,12 +8,12 @@ import data from "./data.json";
 const PackageList = () => {
     const [packageList, setTracking] = useState(data);
 
-    useEffect (() => {
-      /*  const filtered = packageList.filter(tracking => {
-          return !tracking.complete;
-        })
-        setTracking(filtered); */
-      }, []
+    useEffect(() => {
+        /*  const filtered = packageList.filter(tracking => {
+            return !tracking.complete;
+          })
+          setTracking(filtered); */
+    }, []
     );
 
     const handleFilter = () => {
@@ -24,20 +24,22 @@ const PackageList = () => {
     }
 
     const handleToggle = (id) => {
-//   let mapped = packageList.map (tracking => {
-//     return tracking.id == id ? {tracking, complete: !tracking.complete}:  
-//   })
-//   setTracking(mapped);
-     }
+        //   let mapped = packageList.map (tracking => {
+        //     return tracking.id == id ? {tracking, complete: !tracking.complete}:  
+        //   })
+        //   setTracking(mapped);
+    }
 
     return (
-        <div>
+        <div id='pkgList'>
+            <input></input> <br></br>
+            <button style={{ margin: '20px', backgroundColor: 'rgb(10, 128, 124)', padding: '10px', color: 'white', fontWeight: 'bold' }} >Submit Tracking</button>
             {packageList.map(packages => {
                 return (
                     <Packages packages={packages} handleToggle={handleToggle} />
                 )
             })}
-            <button style={{margin: '20px' , backgroundColor: 'grey', padding: '10px' }} onClick={handleFilter}>Clear Completed Deliveries</button>
+            <button style={{ margin: '20px', backgroundColor: 'grey', padding: '10px' }} onClick={handleFilter}>Clear Completed Deliveries</button>
 
         </div>
     )
