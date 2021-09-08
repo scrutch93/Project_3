@@ -31,14 +31,16 @@ const PackageList = () => {
      }
 
     return (
-        <div>
+        <div id='pkgList'>
+            <input></input> <br></br>
+            <button style={{margin: '20px' , backgroundColor: 'rgb(10, 128, 124)', padding: '10px', color: 'white', fontWeight: 'bold' }} >Submit Tracking</button>
+
             {packageList.map(packages => {
                 return (
                     <Packages packages={packages} handleToggle={handleToggle} />
                 )
             })}
-            <button style={{margin: '20px' , backgroundColor: 'grey', padding: '10px' }} onClick={handleFilter}>Clear Completed Deliveries</button>
-
+            <button style={{margin: '20px' , backgroundColor: 'rgb(10, 128, 124)', padding: '10px', color: 'white', fontWeight: 'bold'}} onClick={handleFilter}>Clear Completed Deliveries</button>
         </div>
     )
 }
