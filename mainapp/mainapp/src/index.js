@@ -4,6 +4,36 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const { GraphQLServer } = require("graphql-yoga");
+
+const typeDefs =
+
+
+type Shipmentdetails  {
+  
+    "tracking_number": "9405511899223197428490", INTEGER
+    "tracking_url": "https://www.fedex.com/fedextrack/?action=track&trackingnumber=9405511899223197428490", BOOLEAN
+    "status_code": "UN", STRING
+    "carrier_code": "fedex", BOOLEAN
+    "carrier_id": 4, INTEGER
+    "carrier_detail_code": null, STRING  
+    "ship_date": null, STRING
+    "estimated_delivery_date": null, STRING
+    "actual_delivery_date": null, STRING
+    "events": []
+}
+
+
+type Packages {
+
+"carrier_id": "se-739693", STRING 
+"carrier_code": "stamps_com", STRING
+"account_number": "test_account_739693", STRING
+"balance": 8888.9800, INTEGER
+"primary": false, BOOLEAN
+
+}
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
@@ -11,16 +41,7 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-"carrier_id": "se-739693", STRING 
-"carrier_code": "stamps_com", STRING
-"account_number": "test_account_739693", STRING
-"requires_funded_amount": true, BOOLEAN
-"balance": 8888.9800, INTEGER
-"nickname": "ShipEngine Test Account - Stamps.com", STRING
-"friendly_name": "Stamps.com", STRING
-"primary": false, BOOLEAN
-"has_multi_package_supporting_services": false, BOOLEAN
-"supports_label_messages": true, BOOLEAn
+
 
 
 // If you want to start measuring performance in your app, pass a function
