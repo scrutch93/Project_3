@@ -80,7 +80,11 @@
   font-size: large;
 }
 
-#signbtn {
+#logBtn:hover {
+  color: rgb(10, 128, 124);
+}
+
+#signBtn {
   margin-top: 10px;
   align-items: center;
   justify-content: center;
@@ -92,6 +96,10 @@
   border-radius: 20px;
   font-weight: bold;
   font-size: large;
+}
+
+#signBtn:hover {
+  color: rgb(10, 128, 124);
 }
 
 #inputemail {
