@@ -26,6 +26,7 @@ export default function Login() {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            placeholder='Enter Email'
           />
         </Form.Group>
         <Form.Group size="lg" controlId="password">
@@ -34,6 +35,7 @@ export default function Login() {
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+             placeholder='Enter Password'
           />
         </Form.Group>
         <Button id="logBtn" block size="lg" type="submit" disabled={!validateForm()}>
