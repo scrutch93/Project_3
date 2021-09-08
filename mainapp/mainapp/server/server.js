@@ -3,7 +3,7 @@ const User = require('../model/user')
 
 
 
-});
+;
 
 
 require('dotenv').config();
