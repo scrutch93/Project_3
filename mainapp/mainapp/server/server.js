@@ -1,4 +1,5 @@
 const express = require("express");
+const routes = require("./routes/api")
 
 const PORT = process.env.PORT || 8000;
 

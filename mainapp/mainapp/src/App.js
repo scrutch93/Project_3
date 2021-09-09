@@ -8,8 +8,8 @@ import Home from "./components/home";
 import Login from "./Pages/login";
 import Register from "./Pages/register";
 import './App.css';
-// let TEST_API_KEY = "TEST_QPWngtFuNk2D2rae/AapqmQ51OZiv0F9C7PgCkNhpxM";
-// let test_url = 'https://api.shipengine.com/v1/carriers'
+let TEST_API_KEY = "TEST_QPWngtFuNk2D2rae/AapqmQ51OZiv0F9C7PgCkNhpxM";
+let test_url = 'https://api.shipengine.com/v1/carriers'
 // var cors_api_host = 'cors-anywhere.herokuapp.com';
 
 
@@ -22,7 +22,7 @@ function App() {
   // useEffect(() => {
   //   fetch(test_url, {
   //     method: "GET",
-     
+
   //       mode: 'cors',
   //     withCredentials: true,
   //     credentials: 'include',
