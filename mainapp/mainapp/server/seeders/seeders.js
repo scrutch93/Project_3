@@ -1,11 +1,13 @@
 const db = require('../config/connection');
-const { User, Package} = require('../models');
+const { Carriers, Package, Services, Tracking } = require('../models');
 const userSeeds = require('./userSeeds.json');
 
 db.once('open', async () => {
   try {
-    await User.deleteMany({});
+    await Carriers.deleteMany({});
     await Package.deleteMany({});
+    await Services.deleteMany({});
+    await Tracking.deleteMany({});
     
     await User.create(userSeeds);
 

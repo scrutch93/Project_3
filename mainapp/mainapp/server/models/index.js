@@ -1,4 +1,6 @@
-const User = require('./User');
-const Package = require('./Package');
+const Carriers = require('../models/Carriers');
+const Package = require('../models/Package');
+const Services = require('../models/Services');
+const Tracking = require('../models/Tracking');
 
-module.exports = { User, Package };
+module.exports = { Carriers, Package, Services, Tracking };
