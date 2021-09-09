@@ -66,6 +66,10 @@ type Auth {
  
  
  }
+
+ type Events {
+   description: BOOLEAN
+ }
  `;
 
  module.exports = typeDefs;
