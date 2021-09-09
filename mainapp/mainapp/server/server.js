@@ -11,7 +11,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 require('dotenv').config();
-const User = require('../models/User')
+
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/user", {
   useNewUrlParser: true
