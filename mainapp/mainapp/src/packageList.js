@@ -3,16 +3,16 @@ import Packages from './packages';
 
 import data from "./data.json";
 
-//const PackageList = ({packageList, handleToggle, handleFilter}) => {
+// const PackageList = ({packageList, handleToggle, handleFilter}) => {
 
 const PackageList = () => {
     const [packageList, setTracking] = useState(data);
 
     useEffect(() => {
-        /*  const filtered = packageList.filter(tracking => {
+          const filtered = packageList.filter(tracking => {
             return !tracking.complete;
           })
-          setTracking(filtered); */
+          setTracking(filtered); 
     }, []
     );
 

@@ -1,4 +1,6 @@
-const typeDefs = require('./typeDefs');
-const resolvers = require('./resolvers');
+const Carriers = require('../models/Carriers');
+const Package = require('../models/Package');
+const Services = require('../models/Services');
+const Tracking = require('../models/Tracking');
 
-module.exports = { typeDefs, resolvers };
+module.exports = { Carriers, Package, Services, Tracking };

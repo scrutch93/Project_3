@@ -26,29 +26,45 @@ type Auth {
     user: User
   }
 
- type Shipmentdetails  {
+ type Carriers  {
   
-     tracking_number: "9405511899223197428490", INTEGER
-     tracking_url: "https://www.fedex.com/fedextrack/?action=track&trackingnumber=9405511899223197428490", BOOLEAN
-     status_code: "UN", STRING
-     carrier_code: "fedex", BOOLEAN
-     carrier_id: 4, INTEGER
-     carrier_detail_code: null, STRING  
-     ship_date: null, STRING
-     estimated_delivery_date: null, STRING
-     actual_delivery_date: null, STRING
-     events: []
+     
+     carrier_code: BOOLEAN
+     carrier_id: INTEGER
+     carrier_detail_code:  STRING  
+     ship_date:  STRING
+     estimated_delivery_date: STRING
+     actual_delivery_date: STRING
+     
+ }
+
+ type Services {
+   service_code: STRING
  }
 
 
  type Package {
 
- carrier_id: "se-739693", STRING 
- carrier_code: "stamps_com", STRING
- account_number: "test_account_739693", STRING
- balance: 8888.9800, INTEGER
- primary: false, BOOLEAN
+ carrier_id:  STRING 
+ carrier_code:  STRING
+ account_number: STRING
+ balance:  INTEGER
+ primary:  BOOLEAN
 
+ }
+
+
+ type tracking {
+   tracking_number: STRING
+  status_code: STRING
+  status_description: BOOLEAN
+  carrier_status_code: STRING
+  carrier_status_description: BOOLEAN
+  ship_date: STRING
+  estimated_delivery_date: STRING
+  actual_delivery_date: STRING
+ 
+ 
  }
  `;
 
