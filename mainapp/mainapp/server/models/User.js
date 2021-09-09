@@ -3,7 +3,7 @@ const { Schema, model } = require('mongoose');
 
 const UserSchema = new Schema({
     username: { type: String, trim: true, required: "Please enter a username"},
-    password: { type: String, trim: true, [(value) => {return value.length >=6}, "Password must contain at least 6 characters"]},
+    password: { type: String, trim: true },
     email: { type: String, unique: true, match: [/.+@.+\..+/, "Wuh-oh! That email address is not valid"]},
     packages: [
         {
@@ -29,7 +29,7 @@ UserSchema.pre('save', async function (next) {
 
 
 
-const User= mongoose.model("User", UserSchema);
+const User= model("User", UserSchema);
 
 
 module.exports = User;
