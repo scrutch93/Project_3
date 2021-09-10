@@ -56,11 +56,21 @@
   align-items: center;
 }
 
+<<<<<<< HEAD
+#login {
+  padding-top: 15%;
+  flex-direction: column;
+  align-items: center;
+}
+
+=======
+>>>>>>> 33e0f75930d94060286f04a55a421a023a485e42
 #pkgList {
   margin-top: 10vmax;
 }
 
-#logBtn {
+<<<<<<< HEAD
+#logBtn  {
   margin-top: 10px;
   align-items: center;
   justify-content: center;
@@ -74,7 +84,32 @@
   font-size: large;
 }
 
-#input {
+#logBtn:hover {
+  color: rgb(10, 128, 124);
+}
+
+#signBtn {
+=======
+#logBtn {
+>>>>>>> 33e0f75930d94060286f04a55a421a023a485e42
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 100px;
+  height: 50px;
+  text-align:center;
+  background-color: rgb(232, 129, 74);
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: large;
+}
+
+#signBtn:hover {
+  color: rgb(10, 128, 124);
+}
+
+#inputemail {
   width: 150px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -82,3 +117,30 @@
   text-align: center;
   border-width: 1px;
 }
+#inputpassword {
+  width: 150px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-content: center;
+  text-align: center;
+  border-width: 1px;
+}
+
+#labelone {
+margin: 10px;
+}
+#labeltwo {
+margin: 24px;
+}
+
+#formemail{
+  margin: 34px;
+  
+}
+
+#formpassword {
+  margin: 20px;
+ 
+}
+
+

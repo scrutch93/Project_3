@@ -7,18 +7,18 @@ export default class SignUp extends Component {
                 <h3>Create Account</h3>
 
                 <div className="form-group">
-                    <label>Email</label> <br></br>
-                    <input id='input'type="email" className="form-control" placeholder="Enter Email" />
+                    <label id= "labelone">Email address</label>
+                    <input id='inputemail' type="email" className="form-control" placeholder="Enter email" />
                 </div>
 
                 <div className="form-group">
-                    <label>Password</label> <br></br>
-                    <input id='input'type="password" className="form-control" placeholder="Enter Password" />
+                    <label id="labeltwo">Password</label>
+                    <input id='inputpassword'  type="password" className="form-control" placeholder="Enter Password" />
                 </div>
 
-                <button id='logBtn' type="submit" className="btn btn-primary btn-block">Create Account</button>
+                <button id='signBtn' type="submit" className="btn btn-primary btn-block">Sign Up</button>
                 <p className="forgot-password text-right">
-                    Already have an account? <a href="/login">Sign in!</a>
+                    Already have an acoount <a href="/login">Sign in!</a>
                 </p>
             </form>
         );
