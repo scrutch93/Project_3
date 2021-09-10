@@ -13,7 +13,7 @@ const PackageList = () => {
             return !tracking.complete;
           })
           setTracking(filtered); 
-    }, []
+    }, [packageList]
     );
 
     const handleFilter = () => {
