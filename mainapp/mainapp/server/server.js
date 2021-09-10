@@ -1,5 +1,8 @@
 const express = require("express");
+<<<<<<< HEAD
 const routes = require("./routes/api")
+=======
+>>>>>>> 33e0f75930d94060286f04a55a421a023a485e42
 
 const PORT = process.env.PORT || 8000;
 
@@ -48,5 +51,8 @@ app.listen(PORT, () => {
 // })
 // .catch((err) => console.log (err));
 
+app.listen(PORT, () => {
+  console.log(`App running on port ${PORT}!`);
+});
 
 
