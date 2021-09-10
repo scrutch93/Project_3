@@ -1,8 +1,5 @@
 const express = require("express");
-<<<<<<< HEAD
 const routes = require("./routes/api")
-=======
->>>>>>> 33e0f75930d94060286f04a55a421a023a485e42
 
 const PORT = process.env.PORT || 8000;
 
@@ -15,7 +12,6 @@ app.use(express.json());
 
 app.use(express.static("public"));
 require('dotenv').config();
-const User = require('./models/User')
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/user", {
   useNewUrlParser: true
