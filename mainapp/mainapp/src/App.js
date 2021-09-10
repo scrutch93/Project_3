@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'; //you will nned this for backend as well
+import React, { useState} from 'react'; //you will nned this for backend as well
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import data from "./data.json";
 //components
@@ -8,14 +8,13 @@ import Home from "./components/home";
 import Login from "./Pages/login";
 import Register from "./Pages/register";
 import './App.css';
-let TEST_API_KEY = "TEST_QPWngtFuNk2D2rae/AapqmQ51OZiv0F9C7PgCkNhpxM";
-let test_url = 'https://api.shipengine.com/v1/carriers'
+
 // var cors_api_host = 'cors-anywhere.herokuapp.com';
 
 
 
 function App() {
-  const [packageList, setTracking] = useState(data);
+  const [packageList, ] = useState(data);
 
   // console.log(process.env.API_KEY);
 
@@ -49,7 +48,7 @@ function App() {
   //   })
   //   setTracking(mapped);
   // }
-  { <PackageList packageList={packageList} /> }
+ 
 
 
   return (
