@@ -20,8 +20,8 @@ export default function Login() {
     <div id="login" className="Login">
       <Form onSubmit={handleSubmit}>
         <Form.Group size="lg" controlId="email">
-          <Form.Label>Email</Form.Label><br></br>
-          <Form.Control id='input'
+          <Form.Label id="formemail" >Email</Form.Label>
+          <Form.Control
             autoFocus
             type="email"
             value={email}
@@ -30,12 +30,13 @@ export default function Login() {
           />
         </Form.Group>
         <Form.Group size="lg" controlId="password">
-          <Form.Label>Password</Form.Label> <br></br>
-          <Form.Control id='input'
+          <Form.Label id="formpassword" >Password</Form.Label>
+          <Form.Control
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             placeholder='Enter Password'
+            
           />
         </Form.Group>
         <Button id="logBtn" block size="lg" type="submit" disabled={!validateForm()}>

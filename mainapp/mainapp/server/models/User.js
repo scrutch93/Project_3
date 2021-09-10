@@ -1,5 +1,5 @@
 const { Schema, model } = require('mongoose');
-const bcrypt = ('bcryptjs')
+
 
 const UserSchema = new Schema({
     username: { type: String, trim: true, required: "Please enter a username"},
@@ -33,3 +33,5 @@ const User= model("User", UserSchema);
 
 
 module.exports = User;
+
+
