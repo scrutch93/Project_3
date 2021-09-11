@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import Packages from "./packageList";
+
+
 
 
 
@@ -17,6 +22,8 @@ export default function Login() {
   }
 
   return (
+    <BrowserRouter>
+    <Switch>
     <div id="login" className="Login">
       <Form onSubmit={handleSubmit}>
         <Form.Group size="lg" controlId="email">
@@ -39,10 +46,14 @@ export default function Login() {
             
           />
         </Form.Group>
+        <Link to="/inventory ">
         <Button id="logBtn" block size="lg" type="submit" disabled={!validateForm()}>
-          Login
+          Login         
         </Button>
+        </Link>
       </Form>
     </div>
+    </Switch>
+    </BrowserRouter>
   );
 }

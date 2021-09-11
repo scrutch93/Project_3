@@ -56,20 +56,16 @@
   align-items: center;
 }
 
-<<<<<<< HEAD
 #login {
   padding-top: 15%;
   flex-direction: column;
   align-items: center;
 }
 
-=======
->>>>>>> 33e0f75930d94060286f04a55a421a023a485e42
 #pkgList {
   margin-top: 10vmax;
 }
 
-<<<<<<< HEAD
 #logBtn  {
   margin-top: 10px;
   align-items: center;
@@ -89,9 +85,6 @@
 }
 
 #signBtn {
-=======
-#logBtn {
->>>>>>> 33e0f75930d94060286f04a55a421a023a485e42
   margin-top: 10px;
   align-items: center;
   justify-content: center;

@@ -7,14 +7,16 @@ import data from "../data.json";
 
 const PackageList = () => {
     const [packageList, setTracking] = useState(data);
-
     useEffect (() => {
       /*  const filtered = packageList.filter(tracking => {
           return !tracking.complete;
         })
         setTracking(filtered); */
       }, []
-    );
+      );
+    
+
+  
 
     const handleFilter = () => {
         const filtered = packageList.filter(tracking => {
@@ -41,6 +43,5 @@ const PackageList = () => {
 
         </div>
     )
-}
-
+        }
 export default PackageList;

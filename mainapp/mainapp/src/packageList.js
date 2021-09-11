@@ -6,15 +6,15 @@ import data from "./data.json";
 // const PackageList = ({packageList, handleToggle, handleFilter}) => {
 
 const PackageList = () => {
-    const [packageList, setTracking] = useState(data);
+     const [packageList, setTracking] = useState(data);
 
     useEffect(() => {
-          const filtered = packageList.filter(tracking => {
-            return !tracking.complete;
+    /*      const filtered = packageList.filter(tracking => {
+             return !tracking.complete;
           })
-          setTracking(filtered); 
-    }, []
-    );
+           setTracking(filtered); */
+      }, []
+      );
 
     const handleFilter = () => {
         const filtered = packageList.filter(tracking => {
@@ -24,11 +24,11 @@ const PackageList = () => {
     }
 
     const handleToggle = (id) => {
-        //   let mapped = packageList.map (tracking => {
-        //     return tracking.id == id ? {tracking, complete: !tracking.complete}:  
-        //   })
-        //   setTracking(mapped);
-    }
+    //       let mapped = packageList.map (tracking => {
+    //         return tracking.id == id ? {tracking, complete: !tracking.complete}:  
+    //       })
+    //       setTracking(mapped);
+     }
 
     return (
         <div id='pkgList'>
@@ -40,6 +40,7 @@ const PackageList = () => {
                 )
             })}
             <button style={{margin: '20px' , backgroundColor: 'rgb(10, 128, 124)', padding: '10px', color: 'white', fontWeight: 'bold'}} onClick={handleFilter}>Clear Completed Deliveries</button>
+
         </div>
     )
 }

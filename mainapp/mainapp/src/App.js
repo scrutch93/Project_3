@@ -7,6 +7,9 @@ import PackageList from "./packageList";
 import Home from "./components/home";
 import Login from "./Pages/login";
 import Register from "./Pages/register";
+
+
+
 import './App.css';
 let TEST_API_KEY = "TEST_QPWngtFuNk2D2rae/AapqmQ51OZiv0F9C7PgCkNhpxM";
 let test_url = 'https://api.shipengine.com/v1/carriers'
@@ -49,7 +52,7 @@ function App() {
   //   })
   //   setTracking(mapped);
   // }
-  { <PackageList packageList={packageList} /> }
+  // { <PackageList packageList={packageList} /> }
 
 
   return (
@@ -62,7 +65,9 @@ function App() {
           <Route path="/inventory" component={PackageList} />
           <Route path="/login" component={Login} id="login" />
           <Route path="/register" component={Register} />
+          {/* <Route path="/packages" component={Inventory} /> */}
         </Switch>
+        
       </div>
     </BrowserRouter>
   );
